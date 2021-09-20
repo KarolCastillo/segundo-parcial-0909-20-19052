@@ -1,7 +1,6 @@
-//Extraemos el elemento dom de la entrada y el tratamiento.
+
 var input_content = document.getElementById("operation").value;
 
-//Declarar funciones en ambas secciones de las Calculadora
 function pulsada (tecla) {    
     switch(tecla) {
         case 'C':
@@ -20,7 +19,7 @@ function pulsada (tecla) {
 }
 
 function erase_num(){
-    //Funcion Para Borrar un caractere
+    //Borrar un caractere
     var last = document.getElementById("operation").value;
     var new_val = last.substring(0, last.length-1);
 
@@ -28,37 +27,37 @@ function erase_num(){
 }
 
 function sin(n1){
-    //Funcion del seno de un numero
+    //seno de un numero
     r = Math.sin(n1);
     return r;
 }
 
 function cos(n1){
-    //Funcion del coseno de un numero
+    // coseno de un numero
     r = Math.cos(n1);
     return r;
 }
 
 function tan(n1){
-    //Funcion del tangente de un numero
+    //tangente de un numero
     r = Math.tan(n1);
     return r;
 }
 
 function log(n1){
-    //Funcion de Logarritmo de un numero
+    // Logarritmo de un numero
     r = Math.log(n1);
     return r;
 }
 
 function pow(n1, n2){
-    //Funcion de Potencia
+    // Potencia
     r = Math.pow(n1, n2);
     return r;
 
 }
 function raiz(n1){
-    //Funcion de raiz cuadrada
+    //raiz cuadrada
     r = Math.sqrt(n1);
     return r;
 }
