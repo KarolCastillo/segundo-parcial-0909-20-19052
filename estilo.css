@@ -1,0 +1,114 @@
+
+body, html{
+    height: 110%;
+    width: 102%;
+}
+
+body{
+    padding: 100px;
+    margin: 0;
+    background-color: #312e2e;
+}
+
+
+.CALCULADORA{
+    display: block;
+    margin: 0 auto;
+    padding: 34px;
+    width: 34%;
+    height: 90%;
+    background-color: hsla(240, 4%, 9%, 0.521);
+    
+}
+
+.pantalla{
+    width: 103%;
+}
+
+.screen-numbers{
+    background: rgb(62, 68, 68, 0);
+    color: #fcfcfcf5;
+    padding: .10px;
+    width: 98%;
+    height: 55px;
+    text-align: left;
+    border: none;
+    border-bottom: 2px solid #f3379b;
+}
+
+/*Secciones de Calculadora*/
+.cientifica{
+    width: 79%;
+    height: 29%;
+}
+
+.divisiondos{
+    display: flex;
+}
+
+.Tec-num{
+    text-align: center;
+    margin: 8px;
+}
+
+.basica{
+    text-align: center;
+    margin: 8px;
+}
+
+
+.title{
+    color: #e2e2e2;
+}
+
+/*Estils de Botones*/
+.btn-number{
+    padding: 5px;
+    color: #fcfcfc;
+    margin: 6px;
+    background: transparent;
+    border: 2px solid rgb(255, 98, 182);
+    border-radius: 70px;
+    width: 40px;
+    height: 40px;
+}
+
+.btn-del{
+    padding: 5px;
+    color: rgb(255, 246, 250);
+    background-color:#ec2d8d;
+    border: 2px solid hsl(329, 61%, 56%);
+    border-radius: 1px;
+    width: 95px;
+    height: 55px;
+    margin: 5px;
+}
+
+.btn-ac{
+    padding: 5px;
+    color: rgb(255, 246, 250);
+    background: transparent;
+    border: 2px solid rgb(255, 98, 182);
+    border-radius: 1px;
+    width: 95px;
+    height: 55px;
+    margin: 5px;
+}
+
+.btn-equal{
+    padding: 10px;
+    color: rgb(255, 246, 250);
+    background: transparent;
+    border: 2px solid #df3b92;
+    border-radius: 2px;
+    width: 200px;
+    height: 56px;
+    margin: 5px;
+}
+
+.btn-fila{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
