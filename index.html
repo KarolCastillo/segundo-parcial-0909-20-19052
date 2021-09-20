@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+    
+    <link rel="stylesheet" href="estilo.css">
+
+    <title>CALCULADORA CIENTIFICA</title>
+</head>
+<body>
+    
+    <form class="CALCULADORA">
+        
+        <div class="pantalla">
+            <input type="text" class="screen-numbers" name="numbers" id="operation">
+        </div><br>
+
+        <h4 class="title">Cientifica</h4>
+        
+        <div class="cientifica">
+            <div class="botones">
+                <input type="button" value="(" class="btn-number" onclick="numbers.value += '('">
+                <input type="button" value=")" class="btn-number" onclick="numbers.value += ')'">
+                <input type="button" value="sin" class="btn-number" onclick="numbers.value += 'sin('">
+                <input type="button" value="cos" class="btn-number" onclick="numbers.value += 'cos('">
+                <input type="button" value="tan" class="btn-number" onclick="numbers.value += 'tan('">
+                <input type="button" value="√" class="btn-number" onclick="numbers.value += 'raiz('">
+            </div>
+            <div class="botones">
+                <input type="button" value="^" class="btn-number" onclick="numbers.value += 'pow('">
+                <input type="button" value=" " class="btn-number">
+                <input type="button" value="%" class="btn-number" onclick="numbers.value += 'prc('">
+                <input type="button" value=" " class="btn-number">
+                <input type="button" value="log" class="btn-number" onclick="numbers.value += 'log('">
+                <input type="button" value="," class="btn-number" onclick="numbers.value += ','">
+            </div>  
+        </div><br>
+
+        <h4 class="title">Basica</h4>
+        
+        <div class="divisiondos">
+           
+            <div class="Tec-num">
+                <div class="botones">
+                    <input type="button" value="7" class="btn-number" onclick="Tec-num.value += '7'">
+                    <input type="button" value="8" class="btn-number" onclick="numbers.value += '8'">
+                    <input type="button" value="9" class="btn-number" onclick="numbers.value += '9'">
+                </div>
+                <div class="botones">
+                    <input type="button" value="4" class="btn-number" onclick="numbers.value += '4'">
+                    <input type="button" value="5" class="btn-number" onclick="numbers.value += '5'">
+                    <input type="button" value="6" class="btn-number" onclick="numbers.value += '6'">
+                </div>
+                <div class="botones">
+                    <input type="button" value="1" class="btn-number" onclick="numbers.value += '1'">
+                    <input type="button" value="2" class="btn-number" onclick="numbers.value += '2'">
+                    <input type="button" value="3" class="btn-number" onclick="numbers.value += '3'">
+                </div>
+                <input type="button" value="0" class="btn-number" onclick="numbers.value += '0'">
+                <input type="button" value="." class="btn-number" onclick="numbers.value += '.'">
+            </div>
+    
+            <div class="basica">
+                <div class="botones">
+                    <input type="button" value="DEL" class="btn-del" onclick="pulsada('C')">
+                    <input type="button" value="AC" class="btn-ac" onclick="erase_num()">
+                </div>
+                <div class="botones">
+                    <input type="button" value="±" class="btn-number" onclick="numbers.value += '±'">
+                    <input type="button" value="+" class="btn-number" onclick="numbers.value += '+'">
+                    <input type="button" value="-" class="btn-number" onclick="numbers.value += '-'">              
+                </div>
+                <div class="botones">
+                    <input type="button" value="*" class="btn-number" onclick="numbers.value += '*'">
+                    <input type="button" value="/" class="btn-number" onclick="numbers.value += '/'">
+                    <input type="button" value="π" class="btn-number" onclick="numbers.value += '3.141592'">
+
+                </div>
+                <input type="button" value="=" class="btn-equal" onclick="pulsada('=')">
+            </div>
+        </div>
+    </form>
+
+     
+    <script src="funcionalidad.js"></script>
+</body>
+</html>
